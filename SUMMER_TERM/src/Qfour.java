@@ -1,20 +1,23 @@
+package Strings;
+
 import java.util.Scanner;
+
 public class Qfour {
 
 	public static void main(String[] args) {
-		Scanner sc = new Scanner(System.in);
-		char a=sc.nextLine().charAt(0);
-		char b=sc.nextLine().charAt(0);
-		if(a>b)
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		String a=sc.next();
+		int n=a.length();
+		if(n%2==0)
 		{
-			System.out.println(b+" "+a);
+			String s=a.substring(0,n/2);
+			System.out.println(s);
 		}
 		else
 		{
-			System.out.println(a+" "+b);
+			System.out.println("null");
 		}
-		
-		
 
 	}
 
