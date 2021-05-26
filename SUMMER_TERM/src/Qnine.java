@@ -1,37 +1,61 @@
-package Strings;
-
 import java.util.Scanner;
-
 public class Qnine {
-
-	public static void main(String[] args) {
-		// TODO Auto-generated method stub
+	public static void main(String args[])
+	{
 		Scanner sc=new Scanner(System.in);
-		String a=sc.next();
-		int n=a.length();
-		String a1=null,a2 = null; 
-		for(int i=0;i<n;i++)
+		System.out.println("Java Sample:");
+		int n=sc.nextInt();
+		if(n==1)
 		{
-			if(a.charAt(i)==',')
-			{
-				a1=a.substring(0,i);
-				a2=a.substring(i+1,n);
-			}
-			else
-			{
-				continue;
-			}
+			System.out.println("January");
 		}
-		String f="";
-		for (int i = 0; i < a1.length() || i < a2.length(); i++)
+		else if(n==2)
 		{
-
-			if (i < a1.length())
-				f += a1.charAt(i);
-			if (i < a2.length())
-				f += a2.charAt(i);
+			System.out.println("Febraury");
 		}
-		System.out.println(f);
+		else if(n==3)
+		{
+			System.out.println("March");
+		}
+		else if(n==4)
+		{
+			System.out.println("April");
+		}
+		else if(n==5)
+		{
+			System.out.println("May");
+		}
+		else if(n==6)
+		{
+			System.out.println("June");
+		}
+		else if(n==7)
+		{
+			System.out.println("July");
+		}
+		else if(n==8)
+		{
+			System.out.println("Augest");
+		}
+		else if(n==9)
+		{
+			System.out.println("September");
+		}
+		else if(n==10)
+		{
+			System.out.println("October");
+		}
+		else if(n==11)
+		{
+			System.out.println("November");
+		}
+		else if(n==12)
+		{
+			System.out.println("Decemner");
+		}
+		else
+		{
+			System.out.println("Invalid");
+		}
 	}
-
 }

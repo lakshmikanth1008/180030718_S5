@@ -1,41 +1,35 @@
-package Strings;
-
 import java.util.Scanner;
-
 public class Qeight {
-	public static void main(String args[])
-	{
-		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		int n=s.length();
-		String a=null,b=null;
-		if(s.charAt(0)=='@')
-		{
-			String s1=s.substring(2,n);
-			System.out.println(s1);
-		}
-		else if(s.charAt(1)=='@')
-		{
-			String s1=s.substring(3,n);
-			System.out.println(s1);
-		}
-		else
-		{
-			for(int i=2;i<n;i++)
-			{
-				if(s.charAt(i)=='@')
-				{
-					a=s.substring(0,i-1);
-					b=s.substring(i+1,n);
-				}
-				else
-				{
-					continue;
-				}
 
-			}
-			System.out.println(a+b);
-			
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		Scanner sc=new Scanner(System.in);
+		char n=sc.next().charAt(0);
+		if(n=='R' || n=='r')
+		{
+			System.out.println("Red");
 		}
+		else if(n=='W' || n=='w')
+		{
+			System.out.println("White");
+		}
+		else if(n=='B' || n=='b')
+		{
+			System.out.println("Blue");
+		}
+		else if(n=='O' || n=='o')
+		{
+			System.out.println("Orange");
+		}
+		else if(n=='G' || n=='g')
+		{
+			System.out.println("Green");
+		}
+		else if(n=='Y' || n=='y')
+		{
+			System.out.println("Yellow");
+		}
+
 	}
+
 }

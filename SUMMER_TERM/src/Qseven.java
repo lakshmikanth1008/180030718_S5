@@ -1,21 +1,20 @@
-package Strings;
-
 import java.util.Scanner;
-
 public class Qseven {
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		int n=s.length();
-		if(s.charAt(0)=='x' && s.charAt(n-1)=='x')
+		char n=sc.next().charAt(0);
+		if(n>=65 && n<=90)
 		{
-			System.out.println(s.substring(1,n-1));
+			int m=(int)n+32;
+			n=(char)m;
+			System.out.println(n);
 		}
 		else
 		{
-			System.out.println(s);
+			int m=(int)n-32;
+			n=(char)m;
+			System.out.println(n);
 		}
 	}
-
 }

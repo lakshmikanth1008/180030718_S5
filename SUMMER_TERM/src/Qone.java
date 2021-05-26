@@ -1,24 +1,24 @@
-package Strings;
-
 import java.util.Scanner;
 
 public class Qone {
-	public static void main(String args[])
-	{
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
 		Scanner sc=new Scanner(System.in);
-		String s=sc.nextLine();
-		StringBuilder sb=new StringBuilder();
-		sb.append(s);
-		sb.reverse();
-		String rev=sb.toString();  
-		if(s.equals(rev))
+		int n=sc.nextInt();
+		if(n<0)
 		{
-			System.out.println("Palindrome");
+		System.out.println("Negative");
+		}
+		else if(n>0)
+		{
+		System.out.println("Positive");
 		}
 		else
 		{
-			System.out.println("Not a Palindrome");
+		System.out.println("Zero");
 		}
+
 	}
 
 }

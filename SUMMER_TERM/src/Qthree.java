@@ -1,17 +1,17 @@
-package Strings;
-
 import java.util.Scanner;
 
 public class Qthree {
 	public static void main(String args[])
 	{
 		Scanner sc=new Scanner(System.in);
-		int n=sc.nextInt();
-		String s=sc.nextLine();
-		String a=s.substring(0,3);
-		for(int i=0;i<n;i++)
+		String n=sc.nextLine();
+		if(n.length()>0)
 		{
-			System.out.print(a);
+			System.out.println(n);
+		}
+		else
+		{
+			System.out.println("No Values");
 		}
 	}
 

@@ -1,23 +1,15 @@
-package Strings;
-
-import java.util.Scanner;
 
 public class Qeleven {
-	public static void main(String args[])
-	{
-		Scanner sc=new Scanner(System.in);
-		String s=sc.next();
-		String s1=sc.next();
-		for(int i=0;i<s.length();i++)
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		for(int i=23;i<=57;i++)
 		{
-			for(int j=0;j<s1.length();j++)
+			if(i%2==0)
 			{
-				if((s.charAt(i))==(s1.charAt(j)) && (s.charAt(i+1))==s1.charAt(j+1))
-				{
-					
-				}
+				System.out.println(i);
+			}
 		}
-		
 	}
-	}
+
 }
